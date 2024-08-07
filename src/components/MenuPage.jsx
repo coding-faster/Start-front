@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import RouterPage from './RouterPage';
+import RouterPage from './router/RouterPage'; 
 import { useLocation } from 'react-router-dom';
 
 
@@ -19,6 +19,9 @@ const MenuPage = () => {
         alert("로그아웃 하시겠습니까?")
         window.location.href = '/bbs'
     }
+    // const mypage = (e) =>{
+    //     window.location.href = '/users/mypage'
+    // }
 
     const uid = sessionStorage.getItem('uid');
     const { pathname } = useLocation()
@@ -56,7 +59,7 @@ const MenuPage = () => {
 
             </Navbar>
 
-            <RouterPage />
+            <RouterPage/>
         </>
     )
 }

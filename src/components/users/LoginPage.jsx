@@ -62,7 +62,7 @@ const LoginPage = () => {
 
                                 <InputGroup>
                                     <InputGroup.Text>비밀번호</InputGroup.Text>
-                                    <Form.Control placeholder='Password' value={upass} name='upass' onChange={onChangeForm}></Form.Control>
+                                    <Form.Control type='password' placeholder='Password' value={upass} name='upass' onChange={onChangeForm}></Form.Control>
                                 </InputGroup>
                             </form>
                         </Card.Body>
