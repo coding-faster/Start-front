@@ -10,6 +10,7 @@ const BBSRouterPage = () => {
         {/* <Route path='/read/:uid' element={<ReadPage/>}/> */}
         <Route path='/read/:bid' element={<ReadPage/>}/>
         <Route path='/write/:bid' element={<BBSUpdatePage/>}/>
+        <Route path='/write' element={<BBSInsertPage/>}/>
     </Routes>
   )
 }
