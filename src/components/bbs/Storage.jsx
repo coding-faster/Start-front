@@ -81,12 +81,13 @@ import { Button, Form, InputGroup } from 'react-bootstrap'
 
 
 const BBSInsertPage = () => {
-    const user = sessionStorage.getItem('uid');
-    const [form,setForm] = useState({
-        writer:user,
-        title:'',
-        contents:''
-    });
+        const res= await  axios.post('/bbs/login')
+    // const user = sessionStorage.getItem('uid');
+    // const [form,setForm] = useState({
+    //     writer:user,
+    //     title:'',
+    //     contents:''
+    // });
 
     const onChange = (e)=>{
         setForm({...form,[e.target.name]:e.target.value})

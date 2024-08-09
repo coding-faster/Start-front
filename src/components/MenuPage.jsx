@@ -47,9 +47,12 @@ const MenuPage = () => {
                                 </Nav.Link>
                             </>
                         ) : (
+                            <>
                             <Nav.Link href="/login" className={pathname === '/login' ? 'active' : ''}>
                                 로그인
                             </Nav.Link>
+                        
+                        </>
                         )}
                     </Nav>
                     )
